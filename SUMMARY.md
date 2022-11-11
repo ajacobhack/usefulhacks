@@ -14,6 +14,7 @@
 ## 🚀 Scripts
 
 * [Decompressor.sh](scripts/decompressor.sh.md)
+* [Dictionary ("for" loop counter)](scripts/dictionary-for-loop-counter.md)
 
 ## 👽 Reconnaissense & Footprinting
 
