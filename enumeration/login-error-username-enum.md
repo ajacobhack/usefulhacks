@@ -1,0 +1,2 @@
+# Login error - username enum
+
