@@ -50,6 +50,7 @@ Change ownership
 ```
 chown name filename
 chown name foldername
+chown -R name:filename /home/name/directoryname
 ```
 
 
