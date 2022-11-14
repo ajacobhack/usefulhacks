@@ -53,7 +53,7 @@ We need to run the program specifying the LD\_PRELOAD option, as follows:
 
 This will result in a shell spawn with root privileges.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Screenshot showing changing to SUDO privileges with exploit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Screenshot showing changing to SUDO privileges with exploit</p></figcaption></figure>
 
 
 

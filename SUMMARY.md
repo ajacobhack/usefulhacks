@@ -26,7 +26,6 @@
 ## 🪟 Network Services Pentesting
 
 * [Vulnerabilities](network-services-pentesting/vulnerabilities.md)
-* [Untitled](network-services-pentesting/untitled.md)
 
 ## 🦜 Enumeration
 
@@ -42,7 +41,7 @@
 
 ## 🐚 Shells
 
-* [Page 1](shells/page-1.md)
+* [Linux Shells](shells/linux-shells.md)
 
 ## Privilege Escalation
 
