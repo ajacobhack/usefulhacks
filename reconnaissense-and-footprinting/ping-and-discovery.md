@@ -11,12 +11,12 @@ nmap -sn -n -T4 -v <IP> -oX <save.file> # Save XML format
 # -sn: No ports scan
 # -n: no dns resolve
 
-# Comprehensive Scan
+# Comprehensive Scan to detect alive hosts
 nmap -n -sn -PE -PP -PS21,22,23,25,80,113,443,31339 --source-port 53 -T4 -vv <IP> -oN <save.file>
 # -PE: ICMP echo request (standar ping query) - code type 8, echo reply - code 0
-# -PP: timestamp request - code 13     -timestamp reply code14
+# -PP: timestamp request - code 13 -timestamp reply code14
 # information request - type 15 (nmap no lo implementa más)
-# -PM: address mask request - type 17    -reply code 18
+# -PM: address mask request - type 17 -reply code 18
 
 # When Firewall is active: PA, ACK probes - Beware of false positives if the FW is not active
 nmap -n -sn -PE -PP -PS21,22,23,25,80,113,443,31339 -PA80,113,443,10042 --source-port 53 -T4 -vv <IP> -oN <save.file>
@@ -24,7 +24,5 @@ nmap -n -sn -PE -PP -PS21,22,23,25,80,113,443,31339 -PA80,113,443,10042 --source
 # Discovery of ALL ports and services without ICMP, without DNS and without versions
 # Use this scan if the host is already known to be alive, eg. CTF or auditing that does not require auditing the ICMP response from hosts. If you require the latter, start with host discovery
 nmap -p- --open -sS -T4 -vv -Pn -n <IP> -oN <save.file>
-
-
 ```
 {% endcode %}

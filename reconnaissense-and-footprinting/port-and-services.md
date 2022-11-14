@@ -8,7 +8,12 @@ NMAP ports & services scan
 nmap -p &#x3C;22,80,135,443...> -sS -T4 -Pn -n -A -vv &#x3C;IP> -oN &#x3C;save.file>
 nmap -p &#x3C;22,80,135,443...> -sS -T4 -Pn -n -sVC -O -vv &#x3C;IP> -oN &#x3C;save.file>
 # All ports - not recommended due to slowness
-nmap -p- -sS -T4 -Pn -n -A -vvv &#x3C;IP> -oN &#x3C;name.save.file>
+nmap -p- -sS -T4 -Pn -n -A -vv &#x3C;IP> -oN &#x3C;save.file>
+
+# Scripts
+nmap -p &#x3C;22,80,135,443...> -sS -T4 -Pn -n -sV -sC -vv &#x3C;IP> -oN &#x3C;save.file>
+nmap -p &#x3C;22,80,135,443...> -sS -T4 -Pn -n -sV --script vuln -vv &#x3C;IP> -oN &#x3C;save.file>
+nmap -p &#x3C;22,80,135,443...> -sS -T4 -Pn -n -sV --script smb* -vv &#x3C;IP> -oN &#x3C;save.file>
 
 -----------------------------------------------------------------
 <strong>#UDP scans are necessary for real world audits, but being so slow it is recommended to scan the top ports.
@@ -16,6 +21,6 @@ nmap -p- -sS -T4 -Pn -n -A -vvv &#x3C;IP> -oN &#x3C;name.save.file>
 </strong><strong>
 </strong>#Nmap "fast" top 1000 UDP ports:
 nmap -sU -sV --version-intensity 0 -n -T4 &#x3C;IP> -oN &#x3C;save.file>
-#If it found udp, I scan with Scripts:
-nmap -sU -sV -sC -n -T4 -p xxxxx &#x3C;IP> -oN &#x3C;save.file.>
+#If it found udp, scan with Scripts:
+nmap -sU -sV -sC -n -T4 -p {xxxx} &#x3C;IP> -oN &#x3C;save.file.>
 </code></pre>
