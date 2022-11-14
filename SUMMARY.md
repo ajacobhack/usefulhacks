@@ -52,7 +52,7 @@
 * [Windows Shells](shells/windows-shells/README.md)
   * [Hoaxshell (evade M.Defender)](shells/windows-shells/hoaxshell-evade-m.defender.md)
 
-## Privilege Escalation
+## 🧗♀ Privilege Escalation
 
 * [Tools and Methodology PrivEsc](privilege-escalation/tools-and-methodology-privesc.md)
 * [Linux PrivEsc](privilege-escalation/linux-privesc/README.md)
