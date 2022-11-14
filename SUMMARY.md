@@ -9,7 +9,7 @@
 ## ⚙ Useful Commands
 
 * [Linux basics](useful-commands/linux-basics.md)
-* [Windows basics (editing)](useful-commands/windows-basics-editing.md)
+* [Windows basics (editing)](useful-commands/windows-basics.md)
 
 ## 🚀 Scripts
 
@@ -31,7 +31,7 @@
 ## 🦜 Enumeration
 
 * [SMB - tcp/139, 445](enumeration/smb-tcp-139-445.md)
-* [Login error - username enum (editing)](enumeration/login-error-username-enum-editing.md)
+* [Login error - username enum (editing)](enumeration/login-error-username-enum.md)
 
 ## 🔨 Cracking passwords
 
@@ -40,9 +40,9 @@
 ## 🐝 Web Application Pentesting
 
 * [Spidering / Forced Browsing](web-application-pentesting/spidering-forced-browsing.md)
-* [General Checks (editing)](web-application-pentesting/general-checks-editing.md)
-* [Web Attacks (editing)](web-application-pentesting/web-attacks-editing.md)
-* [🍪 Cookies (editing)](web-application-pentesting/cookies-editing.md)
+* [General Checks (editing)](web-application-pentesting/general-checks.md)
+* [Web Attacks (editing)](web-application-pentesting/web-attacks.md)
+* [🍪 Cookies (editing)](web-application-pentesting/cookies.md)
 
 ## 🐚 Shells
 
