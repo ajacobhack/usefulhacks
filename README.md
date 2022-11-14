@@ -6,3 +6,4 @@ description: >-
 
 # Useful Hacks
 
+The techniques and commands listed belong to public knowledge and in the case of belonging to authors, all credit is theirs.
