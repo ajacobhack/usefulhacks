@@ -41,12 +41,16 @@ chown -R name:filename /home/name/directoryname
 #Add new user
 useradd hacker:hacker_group
 useradd -p 'openssl passwd -1 <Password>' hacker
+
+#Set not removable bit (sticky bit)
+sudo chattr +i file.txt
+sudo chattr -i file.txt #Remove the bit so you can delete it
 ```
 {% endcode %}
 
 ## Common Bash
 
-### SSH
+### _SSH_
 
 {% code overflow="wrap" %}
 ```bash
@@ -66,7 +70,7 @@ ssh-keyscan 10.10.10.101
 ```
 {% endcode %}
 
-### Decompress, curl, openssl, etc
+### _Decompress, curl, openssl, etc_
 
 <pre class="language-bash" data-overflow="wrap"><code class="lang-bash"># Truncate and write: >
 # Append: >>
@@ -147,10 +151,7 @@ lsof -i :80 #Files uses by networks processes
 fuser -nv tcp 80
 
 #Send Email
-sendEmail -t to@email.com -f from@email.com -s 192.168.8.131 -u Subject -a file.pdf #You will be prompted for the content
-
-#DD copy hex bin file without first X (28) bytes
-dd if=file.bin bs=28 skip=1 of=blob
+sendEmail -t to@email.com -f from@email.com -s {IP} -u Subject -a file.pdf #You will be prompted for the content
 
 #Mount .vhd files (virtual hard drive)
 sudo apt-get install libguestfs-tools
@@ -171,22 +172,14 @@ openssl rsa -in key.ssh.enc -out key.ssh
 #Decrypt
 openssl enc -aes256 -k &#x3C;KEY> -d -in backup.tgz.enc -out b.tgz
 
-#Reconfigure timezone
-sudo dpkg-reconfigure tzdata
-
 #Search from which package is a binary
 apt-file search /usr/bin/file #Needed: apt-get install apt-file
 
-#Protobuf decode https://www.ezequiel.tech/2020/08/leaking-google-cloud-projects.html
-echo "CIKUmMesGw==" | base64 -d | protoc --decode_raw
 
-#Set not removable bit
-sudo chattr +i file.txt
-sudo chattr -i file.txt #Remove the bit so you can delete it
 
 </code></pre>
 
-### Grep & filters (awk, sed...)
+### _Grep & filters (awk, sed...)_
 
 {% code overflow="wrap" %}
 ```bash
