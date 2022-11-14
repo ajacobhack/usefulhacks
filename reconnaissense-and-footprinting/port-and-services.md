@@ -23,4 +23,14 @@ nmap -p &#x3C;22,80,135,443...> -sS -T4 -Pn -n -sV --script smb* -vv &#x3C;IP> -
 nmap -sU -sV --version-intensity 0 -n -T4 &#x3C;IP> -oN &#x3C;save.file>
 #If it found udp, scan with Scripts:
 nmap -sU -sV -sC -n -T4 -p {xxxx} &#x3C;IP> -oN &#x3C;save.file.>
-</code></pre>
+
+---------------------------------------------------------------------
+## FW / IDS Evation
+#Evasion scans and test correct FW settings
+nmap -D RND:10 -f -mtu 8 -g 80 -vv &#x3C;IP> -oA &#x3C;save.file>
+nmap -n -D RND:10 -f -mtu 8 -g 80 -vv &#x3C;IP> -oA &#x3C;save.file>
+
+#-D RND:10 = decoy scan
+#-f = packet fragmentation
+#-mtu =Maximum Transmission Unit, Maximum packet transmission unit, in this case 8 bytes
+#-g or —source-port = Source port manipulation, send everything from the port we chose to cheat.</code></pre>

@@ -20,8 +20,8 @@
 
 * [Ping & Discovery](reconnaissense-and-footprinting/ping-and-discovery.md)
 * [Port & Services](reconnaissense-and-footprinting/port-and-services.md)
-* [Technologies](reconnaissense-and-footprinting/technologies.md)
 * [FW / WAF Detection](reconnaissense-and-footprinting/fw-waf-detection.md)
+* [Technologies](reconnaissense-and-footprinting/technologies.md)
 
 ## 🪟 Network Services Pentesting
 
