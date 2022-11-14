@@ -25,12 +25,17 @@
 
 ## 🪟 Network Services Pentesting
 
-* [Vulnerabilities](network-services-pentesting/vulnerabilities.md)
+* [Vulnerability Detection](network-services-pentesting/vulnerability-detection.md)
+* [Search Exploits](network-services-pentesting/search-exploits.md)
 
 ## 🦜 Enumeration
 
 * [SMB - tcp/139, 445](enumeration/smb-tcp-139-445.md)
 * [Login error - username enum](enumeration/login-error-username-enum.md)
+
+## 🔨 Cracking passwords
+
+* [Cracking hashes](cracking-passwords/cracking-hashes.md)
 
 ## 🐝 Web Application Pentesting
 
@@ -41,7 +46,10 @@
 
 ## 🐚 Shells
 
-* [Linux Shells](shells/linux-shells.md)
+* [Linux Shells](shells/linux-shells/README.md)
+  * [PHP Reverse Shell](shells/linux-shells/php-reverse-shell.md)
+* [Windows Shells](shells/windows-shells/README.md)
+  * [Hoaxshell (evade M.Defender)](shells/windows-shells/hoaxshell-evade-m.defender.md)
 
 ## Privilege Escalation
 
@@ -61,7 +69,3 @@
   * [Saved Credentials](privilege-escalation/windows-privesc/saved-credentials.md)
   * [Registry Keys](privilege-escalation/windows-privesc/registry-keys.md)
   * [Unattend files](privilege-escalation/windows-privesc/unattend-files.md)
-
-## Exfiltration
-
-* [Credential Dumping](exfiltration/credential-dumping.md)
