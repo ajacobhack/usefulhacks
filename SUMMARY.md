@@ -25,7 +25,7 @@
 
 ## 🪟 Network Services Pentesting
 
-* [Vulnerability Detection](network-services-pentesting/vulnerability-detection.md)
+* [Vulnerability Detection](network-services-pentesting/vulnerabilities.md)
 * [Search Exploits](network-services-pentesting/search-exploits.md)
 
 ## 🦜 Enumeration
@@ -35,7 +35,7 @@
 
 ## 🔨 Cracking passwords
 
-* [Cracking hashes](cracking-passwords/cracking-hashes.md)
+* [Cracking hashes](exfiltration/credential-dumping.md)
 
 ## 🐝 Web Application Pentesting
 
@@ -46,7 +46,7 @@
 
 ## 🐚 Shells
 
-* [Linux Shells](shells/linux-shells/README.md)
+* [Linux Shells](shells/page-1.md)
   * [PHP Reverse Shell](shells/linux-shells/php-reverse-shell.md)
 * [Windows Shells](shells/windows-shells/README.md)
   * [Hoaxshell (evade M.Defender)](shells/windows-shells/hoaxshell-evade-m.defender.md)
@@ -56,10 +56,9 @@
 * [Tools and Methodology PrivEsc](privilege-escalation/tools-and-methodology-privesc.md)
 * [Linux PrivEsc](privilege-escalation/linux-privesc/README.md)
   * [SUDO](privilege-escalation/linux-privesc/sudo.md)
-  * [SUID / GUID](privilege-escalation/linux-privesc/suid-guid.md)
+  * [SUID / GUID / Sticky Bit](privilege-escalation/linux-privesc/suid-guid-sticky-bit.md)
   * [Capabilities](privilege-escalation/linux-privesc/capabilities.md)
   * [Cron jobs](privilege-escalation/linux-privesc/cron-jobs.md)
-  * [Sticky Bits](privilege-escalation/linux-privesc/sticky-bits.md)
 * [Windows PrivEsc](privilege-escalation/windows-privesc/README.md)
   * [DLL hijacking (DLL path abuse)](privilege-escalation/windows-privesc/dll-hijacking-dll-path-abuse.md)
   * [Unquoted service Path](privilege-escalation/windows-privesc/unquoted-service-path.md)

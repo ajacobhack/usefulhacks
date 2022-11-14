@@ -1,3 +1,0 @@
-# Sticky Bits
-
-Under Construction
