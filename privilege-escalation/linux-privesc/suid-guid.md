@@ -6,7 +6,7 @@
 
 SUID o Set Owner User ID es un indicador de bit de permiso que se aplica a los ejecutables. SUID permite que un usuario alternativo ejecute un ejecutable con los mismos permisos que el propietario del archivo en lugar de los permisos del usuario alternativo.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>SUID permission</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption><p>SUID permission</p></figcaption></figure>
 
 
 
@@ -42,7 +42,7 @@ _**SGID es similar a SUID. Con el conjunto de bits SGID, cualquier usuario que e
 
 Su beneficio está en el manejo del directorio. Cuando se aplica el permiso SGID a un directorio, todos los subdirectorios y archivos creados dentro de este directorio obtendrán la misma propiedad de grupo que el directorio principal (no la propiedad de grupo del usuario que creó los archivos y directorios).
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 💡 GUID (globally unique identifier) se refiere usualmente a una forma más robusta de UUID (universally unique identifier), y parece fuera de lugar respecto de los permisos de usuarios y grupos en particular. Tradicionalmente, sin embargo, alguna documentación de Unix refieren a SGID como bit GUID.
 
@@ -70,7 +70,7 @@ chmod 0766 file
 
 _**El sticky bit funciona en el directorio. Con el sticky bit establecido en un directorio, todos los archivos en el directorio solo pueden ser eliminados o renombrados por los propietarios del archivo o por la raíz.**_
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Esto se usa normalmente en el directorio /tmp que funciona como la papelera de archivos temporales.
 

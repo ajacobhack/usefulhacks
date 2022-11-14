@@ -25,9 +25,9 @@ find / -type f -perm -04000 -ls 2>/dev/null
 ```
 {% endcode %}
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 Ejemplos de aplicaciones:
 
@@ -54,7 +54,7 @@ su hacker
 ```
 {% endcode %}
 
-![](<../.gitbook/assets/image (6).png>)
+![](<../.gitbook/assets/image (11).png>)
 
 ## Tools
 

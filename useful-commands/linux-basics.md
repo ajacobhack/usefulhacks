@@ -107,8 +107,11 @@ cd {tmp/tmp/whatever}
 xclip -sel c &#x3C; cat file.txt
 
 #HTTP servers
+python3 -m http.server &#x3C;port>
+python3 -m http.server 4444
+python3 -m http.server 9999
+
 python -m SimpleHTTPServer 80
-python3 -m http.server
 ruby -rwebrick -e "WEBrick::HTTPServer.new(:Port => 80, :DocumentRoot => Dir.pwd).start"
 php -S $ip:80
 
@@ -175,8 +178,8 @@ openssl enc -aes256 -k &#x3C;KEY> -d -in backup.tgz.enc -out b.tgz
 #Search from which package is a binary
 apt-file search /usr/bin/file #Needed: apt-get install apt-file
 
-
-
+### COMPILAR archivo .c en .so
+gcc -fPIC -shared -o shell.so shell.c -nostartfiles    #Compila el archivo .c en .so
 </code></pre>
 
 ### _Grep & filters (awk, sed...)_

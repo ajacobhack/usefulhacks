@@ -249,6 +249,6 @@ set LPORT 4444    #como en el exploit php
 
 * Al ejecutar el exploit php por ej. cargado en directorio de uploads, la conexión inversa con payload meterpreter es atrapada por el multiahndler que espera ese tipo de payload, logrando una shell reverse meterpreter.
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>

@@ -46,6 +46,7 @@
 
 ## 🐚 Shells
 
+* [Shell stabilization (Linux)](shells/shell-stabilization-linux.md)
 * [Linux Shells](shells/page-1.md)
   * [PHP Reverse Shell](shells/linux-shells/php-reverse-shell.md)
 * [Windows Shells](shells/windows-shells/README.md)
@@ -56,7 +57,7 @@
 * [Tools and Methodology PrivEsc](privilege-escalation/tools-and-methodology-privesc.md)
 * [Linux PrivEsc](privilege-escalation/linux-privesc/README.md)
   * [SUDO](privilege-escalation/linux-privesc/sudo.md)
-  * [SUID / GUID / Sticky Bit](privilege-escalation/linux-privesc/suid-guid-sticky-bit.md)
+  * [SUID / GUID / Sticky Bit](privilege-escalation/linux-privesc/suid-guid.md)
   * [Capabilities](privilege-escalation/linux-privesc/capabilities.md)
   * [Cron jobs](privilege-escalation/linux-privesc/cron-jobs.md)
 * [Windows PrivEsc](privilege-escalation/windows-privesc/README.md)
@@ -68,3 +69,7 @@
   * [Saved Credentials](privilege-escalation/windows-privesc/saved-credentials.md)
   * [Registry Keys](privilege-escalation/windows-privesc/registry-keys.md)
   * [Unattend files](privilege-escalation/windows-privesc/unattend-files.md)
+
+## 🕹 C2
+
+* [GodGenesis](c2/godgenesis.md)
