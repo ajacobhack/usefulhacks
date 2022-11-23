@@ -4,7 +4,8 @@
 
 * [Useful Hacks](README.md)
 * [About Author](welcome/about-author.md)
-* [Getting Started in Hacking](welcome/getting-started-in-hacking.md)
+* [CTF, Labs for practice Hacking](welcome/ctf-labs-for-practice-hacking.md)
+* [Resources](welcome/resources.md)
 
 ## ⚙ Useful Commands
 

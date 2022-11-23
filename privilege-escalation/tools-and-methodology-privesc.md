@@ -66,3 +66,12 @@ GTFOBins link
 
 LinPEAS & WinPEAS:&#x20;
 
+{% embed url="https://github.com/carlospolop/PEASS-ng" %}
+
+LinuxPrivEsc
+
+{% embed url="https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md" %}
+
+WindowsPrivEsc
+
+{% embed url="https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md" %}
