@@ -46,6 +46,7 @@
 
 ## 🐚 Shells
 
+* [Reverse Shell Generator](shells/reverse-shell-generator.md)
 * [Shell stabilization (Linux)](shells/shell-stabilization-linux.md)
 * [Linux Shells](shells/page-1.md)
   * [PHP Reverse Shell](shells/linux-shells/php-reverse-shell.md)
