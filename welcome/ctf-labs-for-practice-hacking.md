@@ -2,7 +2,13 @@
 description: Learning by Practice
 ---
 
-# Getting Started in Hacking
+# CTF, Labs for practice Hacking
+
+{% embed url="https://owasp.org/www-project-vulnerable-web-applications-directory/" %}
+
+Excellent repo of broken apps for all types of vulnerabilities. Made it by OWASP Project.
+
+
 
 [https://www.hackthebox.eu/](https://www.hackthebox.eu/)&#x20;
 
