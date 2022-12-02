@@ -1,5 +1,23 @@
 # Ping & Discovery
 
+NMAP output
+
+{% code overflow="wrap" %}
+```bash
+# Format:
+nmap [flags] [output_flag] <save_name>
+nmap [flags] [output_flag] > /xxx/xxx/<save_name>
+
+# Outputs
+-oN    #NMAP output, simple text.
+-oG    #Grepable output, consists of comments (lines starting with a pound (#)) and target lines.
+-oX    # XML output: includes a document type definition (DTD) which allows XML parsers to validate Nmap XML output. XML offers a stable format that is easily parsed by software. Is far more powerful than grepable format, and is nearly as convenient for experienced users.
+-oA    # All formats.
+```
+{% endcode %}
+
+
+
 NMAP discovery
 
 {% code overflow="wrap" %}

@@ -1,5 +1,21 @@
 # Port & Services
 
+Output Formats for reference
+
+{% code overflow="wrap" %}
+```bash
+# Format:
+nmap [flags] [output_flag] <save_name>
+nmap [flags] [output_flag] > /xxx/xxx/<save_name>
+
+# Outputs
+-oN    #NMAP output, simple text.
+-oG    #Grepable output
+-oX    # XML output
+-oA    # All formats.
+```
+{% endcode %}
+
 NMAP ports & services scan
 
 <pre class="language-bash" data-overflow="wrap"><code class="lang-bash"># Scanning ports and services with versions, OS, Scripts (Versions requires full TCP handshake and is incompatible with -sS Stealth, but -O and -sC are)
@@ -33,4 +49,5 @@ nmap -n -D RND:10 -f -mtu 8 -g 80 -vv &#x3C;IP> -oA &#x3C;save.file>
 #-D RND:10 = decoy scan
 #-f = packet fragmentation
 #-mtu =Maximum Transmission Unit, Maximum packet transmission unit, in this case 8 bytes
-#-g or —source-port = Source port manipulation, send everything from the port we chose to cheat.</code></pre>
+#-g or —source-port = Source port manipulation, send everything from the port we chose to cheat.
+</code></pre>
