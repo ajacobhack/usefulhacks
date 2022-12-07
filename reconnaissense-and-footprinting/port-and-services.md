@@ -21,12 +21,17 @@ NMAP ports & services scan
 <pre class="language-bash" data-overflow="wrap"><code class="lang-bash"># Scanning ports and services with versions, OS, Scripts (Versions requires full TCP handshake and is incompatible with -sS Stealth, but -O and -sC are)
 
 # It is best to use intense scanning only on open ports found
-nmap -p &#x3C;22,80,135,443...> -sS -T4 -Pn -n -A -vv &#x3C;IP> -oN &#x3C;save.file>
-nmap -p &#x3C;22,80,135,443...> -sS -T4 -Pn -n -sVC -O -vv &#x3C;IP> -oN &#x3C;save.file>
-# All ports - not recommended due to slowness
-nmap -p- -sS -T4 -Pn -n -A -vv &#x3C;IP> -oN &#x3C;save.file>
+nmap -p &#x3C;22,80,135,443...> -sS -T4 -Pn -n -A -vv &#x3C;IP> -oN &#x3C;save.output>
+nmap -p &#x3C;22,80,135,443...> -sS -T4 -Pn -n -sVC -O -vv &#x3C;IP> -oN &#x3C;save.output>
 
-# Scripts
+# All ports - not recommended due to slowness
+nmap -p- -sS -T4 -Pn -n -A -vvv &#x3C;IP> -oN &#x3C;save.output>
+
+# All ports - grepable, then filter the grepable output with grep
+nmap -p- -sS -T4 -Pn -n -A -vvv &#x3C;IP> -oG &#x3C;grepable.save.output>
+grep -oP '\d{1,5}/open' &#x3C;grepable.save.output>  # Show only ports open
+
+# Nmap Scripts
 nmap -p &#x3C;22,80,135,443...> -sS -T4 -Pn -n -sV -sC -vv &#x3C;IP> -oN &#x3C;save.file>
 nmap -p &#x3C;22,80,135,443...> -sS -T4 -Pn -n -sV --script vuln -vv &#x3C;IP> -oN &#x3C;save.file>
 nmap -p &#x3C;22,80,135,443...> -sS -T4 -Pn -n -sV --script smb* -vv &#x3C;IP> -oN &#x3C;save.file>
