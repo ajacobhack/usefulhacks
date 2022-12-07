@@ -28,9 +28,13 @@ nmap -p &#x3C;22,80,135,443...> -sS -T4 -Pn -n -sVC -O -vv &#x3C;IP> -oN &#x3C;s
 nmap -p- -sS -T4 -Pn -n -A -vvv &#x3C;IP> -oN &#x3C;save.output>
 
 # All ports - grepable, then filter the grepable output with grep
-nmap -p- -sS -T4 -Pn -n -A -vvv &#x3C;IP> -oG &#x3C;grepable.save.output>
-grep -oP '\d{1,5}/open' &#x3C;grepable.save.output>  # Show only ports open
+nmap -p- -sS -T4 -Pn -n -A -vvv &#x3C;IP> -oG &#x3C;grepable.output>
+grep -oP '\d{1,5}/open' &#x3C;grepable.output> | awk '{print $1}' FS="/"  # Show only ports open
 
+#Tenerlos en línea copiados en clipboard para pegar en otro comando (creds. S4vitar)
+grep -oP '\d{1,5}/open' &#x3C;grepable.output> | awk '{print $1}' FS="/" | xargs | tr ' ' ',' | tr -d '\n' | xclip -sel clip
+
+------------------------------------------------
 # Nmap Scripts
 nmap -p &#x3C;22,80,135,443...> -sS -T4 -Pn -n -sV -sC -vv &#x3C;IP> -oN &#x3C;save.file>
 nmap -p &#x3C;22,80,135,443...> -sS -T4 -Pn -n -sV --script vuln -vv &#x3C;IP> -oN &#x3C;save.file>
