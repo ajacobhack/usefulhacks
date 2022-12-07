@@ -1,5 +1,14 @@
 # Ping & Discovery
 
+
+
+PING and knowing the hops
+
+```bash
+ping -c 1 <IP>      # 1 packet for ping
+ping -c 1 <IP> -R   # Traceroute, show hops and intermediary IP-nodes
+```
+
 NMAP output
 
 {% code overflow="wrap" %}
