@@ -4,7 +4,7 @@ description: Main Page
 
 # Useful Hacks
 
-<figure><img src=".gitbook/assets/teclado-enter-calavera-pirata-hacking.jpg" alt=""><figcaption><p>Useful Hacks</p></figcaption></figure>
+<figure><img src=".gitbook/assets/useful-hacks-banner-tecladonegro-calavera.png" alt=""><figcaption></figcaption></figure>
 
 [https://n3wre4lity.gitbook.io/usefulhacks/](https://n3wre4lity.gitbook.io/usefulhacks/)
 
