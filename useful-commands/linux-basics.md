@@ -180,6 +180,7 @@ apt-file search /usr/bin/file #Needed: apt-get install apt-file
 
 ### COMPILAR archivo .c en .so
 gcc -fPIC -shared -o shell.so shell.c -nostartfiles    #Compila el archivo .c en .so
+
 </code></pre>
 
 ### _Grep & filters (awk, sed...)_

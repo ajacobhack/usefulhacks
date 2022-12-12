@@ -1,22 +1,13 @@
 # Ping & Discovery
 
-NMAP output
 
-{% code overflow="wrap" %}
+
+PING and knowing the hops
+
 ```bash
-# Format:
-nmap [flags] [output_flag] <save_name>
-nmap [flags] [output_flag] > /xxx/xxx/<save_name>
-
-# Outputs
--oN    #NMAP output, simple text.
--oG    #Grepable output, consists of comments (lines starting with a pound (#)) and target lines.
--oX    # XML output: includes a document type definition (DTD) which allows XML parsers to validate Nmap XML output. XML offers a stable format that is easily parsed by software. Is far more powerful than grepable format, and is nearly as convenient for experienced users.
--oA    # All formats.
+ping -c 1 <IP>      # 1 packet for ping
+ping -c 1 <IP> -R   # Traceroute, show hops and intermediary IP-nodes
 ```
-{% endcode %}
-
-
 
 NMAP discovery
 
@@ -42,5 +33,21 @@ nmap -n -sn -PE -PP -PS21,22,23,25,80,113,443,31339 -PA80,113,443,10042 --source
 # Discovery of ALL ports and services without ICMP, without DNS and without versions
 # Use this scan if the host is already known to be alive, eg. CTF or auditing that does not require auditing the ICMP response from hosts. If you require the latter, start with host discovery
 nmap -p- --open -sS -T4 -vv -Pn -n <IP> -oN <save.file>
+```
+{% endcode %}
+
+NMAP output
+
+{% code overflow="wrap" %}
+```bash
+# Format:
+nmap [flags] [output_flag] <save_name>
+nmap [flags] [output_flag] > /xxx/xxx/<save_name>
+
+# Outputs
+-oN    #NMAP output, simple text.
+-oG    #Grepable output, consists of comments (lines starting with a pound (#)) and target lines.
+-oX    # XML output: includes a document type definition (DTD) which allows XML parsers to validate Nmap XML output. XML offers a stable format that is easily parsed by software. Is far more powerful than grepable format, and is nearly as convenient for experienced users.
+-oA    # All formats.
 ```
 {% endcode %}
