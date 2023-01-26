@@ -19,3 +19,9 @@ done
 ```bash
 ./script.sh > diccionary.txt
 ```
+
+Código para generar txt de puertos para Fuzzing de localhost para la verificación de vulnerabilidad  CSRF:
+
+```bash
+for i in {1..65535}; do; echo "$i"; done > ports.txt
+```
