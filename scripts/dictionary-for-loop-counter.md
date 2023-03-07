@@ -25,3 +25,11 @@ Código para generar txt de puertos para Fuzzing de localhost para la verificaci
 ```bash
 for i in {1..65535}; do; echo "$i"; done > ports.txt
 ```
+
+Payload 1 caracter, de a-z y de 0-9:
+
+{% code overflow="wrap" %}
+```bash
+for i in {a..z}; do echo "$i"; done > az09.txt && for u in {0..9}; do echo "$u"; done >> az09.txt
+```
+{% endcode %}
