@@ -6,7 +6,7 @@ description: Main Page
 
 <figure><img src=".gitbook/assets/useful-hacks-banner-tecladonegro-calavera.png" alt=""><figcaption></figcaption></figure>
 
-[https://n3wre4lity.gitbook.io/usefulhacks/](https://n3wre4lity.gitbook.io/usefulhacks/)
+
 
 This gitbook is a repository that acts as a knowledge database of useful hacks and pentesting techniques both for my personal use and for those who need it.
 

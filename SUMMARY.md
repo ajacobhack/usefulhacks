@@ -7,7 +7,7 @@
 * [CTF, Labs for practice Hacking](welcome/ctf-labs-for-practice-hacking.md)
 * [Resources](welcome/resources.md)
 
-## ⚙ Useful Commands
+## ⚙️ Useful Commands
 
 * [Linux basics](useful-commands/linux-basics.md)
 * [Windows basics (editing)](useful-commands/windows-basics.md)
@@ -54,7 +54,7 @@
 * [Windows Shells](shells/windows-shells/README.md)
   * [Hoaxshell (evade M.Defender)](shells/windows-shells/hoaxshell-evade-m.defender.md)
 
-## 🧗♀ Privilege Escalation
+## 🧗‍♀️ Privilege Escalation
 
 * [Tools and Methodology PrivEsc](privilege-escalation/tools-and-methodology-privesc.md)
 * [Linux PrivEsc](privilege-escalation/linux-privesc/README.md)
@@ -72,6 +72,6 @@
   * [Registry Keys](privilege-escalation/windows-privesc/registry-keys.md)
   * [Unattend files](privilege-escalation/windows-privesc/unattend-files.md)
 
-## 🕹 C2
+## 🕹️ C2
 
 * [GodGenesis](c2/godgenesis.md)
